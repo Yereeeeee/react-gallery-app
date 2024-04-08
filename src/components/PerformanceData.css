@@ -1,0 +1,52 @@
+.performance-data {
+    display: flex;
+    justify-content: space-around;
+    /*flex-wrap: wrap;*/
+    /*overflow: hidden;*/
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 20px;
+    margin-bottom: 20px;
+
+}
+
+/* Добавьте следующий стиль в файл PerformanceData.css */
+
+.image-list {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+
+}
+
+.image-list li {
+    margin-right: 10px;
+    margin-bottom: 10px;
+    width: calc(20% - 10px); /* Рассчитываем ширину элемента так, чтобы в ряду было 5 элементов с отступами между ними */
+    flex: 0 0 auto; /* Отключаем увеличение элемента в случае нехватки места */
+    text-align: center; /* Центрируем содержимое */
+}
+
+.image-list img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px; /* Добавляем скругленные углы для изображений */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Добавляем тень для изображений */
+}
+
+
+
+
+.performance-data h2 {
+    margin-top: 0;
+}
+
+
+
+.image-list li:before {
+    content: "→ ";
+    color: #888;
+}
+
